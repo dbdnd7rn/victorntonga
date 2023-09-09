@@ -1,0 +1,380 @@
+*{box-sizing: border-box;
+}
+
+#slider{
+    overflow: hidden;
+    scale: 50px;
+    margin-bottom: 20px;
+}
+#slider figure{
+   position: relative;
+   width: 500%;
+   margin: 0;
+   left: 0;
+    
+  animation: 20s slider infinite;
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+}
+@keyframes slider{
+    0% {
+		 left: 0;
+	 }
+	 20% {
+         left: 0%;
+     }
+    25% {
+     left: -100%;
+	}
+	45% {
+	 left: -100%;
+    }
+    50% {
+      left: -200%;
+   }
+   70% {
+     left: -200%;
+     }
+   75% {
+     left: -300%;
+    }
+    100% {
+       left: -300%;
+    }
+}
+.search{position: absolute;
+         margin-top: -50px;
+		  margin-left: 1300px;
+		border-radius: 4px;
+	    outline: none;
+		height: 1.5rem;
+		width: 200px;
+		text-align: center;
+	    }
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #dfe9f4;
+}
+header {
+	background-color: #2d67f9;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+nav{
+	flex: 1;
+	padding-left: 60px;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0px 20px;
+	text-align: center;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: larger;
+}
+.nav img{
+     width: 100px;
+	 height: 100px;
+}
+
+footer {
+	background-color: #0077be;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+h9 {
+	color: #0077be;
+	text-align: center;
+	font-size: 60px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.heading {
+	text-align: center;
+}
+p {
+	margin: 0 0 20px 0;
+}
+a:hover {
+	color: #0077be;
+}
+nav a.active {
+	background-color: #fff;
+	color: #0077be;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+h3 {
+	text-align: center;
+	font-size: 30px;
+	margin: 0;
+	padding-top: 10px;
+}
+a {
+	text-decoration: none;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0px;
+}
+.content {
+	width: 20%;
+	margin: 15px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	padding-top: 10px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+	0 10px 10px rgba(0, 0, 0, 0.22);
+	transition: .4s;
+	background: #f0f0f0;	
+}
+.content:hover {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15),
+	0 3px 6px rgba(0, 0, 0, 0.23);
+	transform: translate(0px, -18px);
+}
+.content img {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+.yeye img{
+	width: 200px;
+	height: 550px;
+}
+p {
+	text-align: center;
+	color: #b2bec3;
+	padding-top:0px 8px;
+}
+h2 {
+	box-sizing: 26px;
+	text-align: center;
+	color: #222f3e;
+	margin: 0;
+}
+button {
+	text-align: center;
+	font-size: 24px;
+	color: #0077be;
+	width: 100%; 
+	padding: 15px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	margin-top: 5px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background: #222f3e; 
+}
+button:hover{
+	color: aliceblue;
+}
+@media(max-width:1000px){
+	.content{
+		width: 45%;
+	}
+}
+@media(max-width:750px){
+	.content{
+		width: 100%;
+	}
+}
+.footer{
+	background: #007aff;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 60px 0 20px;
+}
+form {
+	background-color: #0077be;
+	color: white;
+	padding: 20px;
+	border-radius: 5px;
+  }
+  
+  form label {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 10px;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+  }
+  
+  form textarea {
+	height: 150px;
+	resize: none;
+  }
+  
+  form input[type="submit"] {
+	background-color: white;
+	color: #0077be;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px 20px;
+	font-size: 18px;
+	transition: background-color 0.3s ease-in-out;
+  }
+  
+  form input[type="submit"]:hover {
+	background-color: #005ea7;
+  }
+  footer {
+	background-color: #0077be;
+	color: white;
+	padding: 20px;
+	text-align: center;
+  }
+  .social-media-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+  }
+  .social-media-icons a {
+	display: inline-block;
+	margin: 0 10px;
+	color: white;
+	font-size: 24px;
+  }
+  .social-media-icons a:hover {
+	color: #005ea7;
+  }  
+  .fab {
+	font-size: inherit;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
